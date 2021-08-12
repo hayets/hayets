@@ -35,10 +35,6 @@ body:after{
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0px;
-  padding: 0px;
-}
 
 ul, ol {
   list-style: none;
@@ -46,12 +42,6 @@ ul, ol {
   padding: 0px;
 }
 
-p {
-  margin-top: 0;
-  padding-right:0%;
-  line-height: 3rem;
-
-}
 
 a {
   text-decoration: none;
@@ -64,9 +54,7 @@ img {
   display: block;
 }
 
-section {
-  padding: 100px 0px;
-}
+
 
 .clearfix::after {
   content: '';
@@ -144,193 +132,130 @@ section {
 }
 
 
-/**intro**/
-.intro{
-  width: 100%;
-  height: 100%;
-}
-
-.intro-words{
+/**fashion**/
+.header {
+  font-size: 24px;
   text-align: center;
-  vertical-align: middle;
 }
 
-.intro-words h2{
-  font-family: 'Righteous', cursive;
-  color: #f4f0e8;
-  letter-spacing: 2.5px;
-  font-size: 50px;
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  padding: 0 30px;
 }
 
-
-.intro-words p{
-  font-family: 'Roboto', sans-serif;
-  color: #f4f0e8;
-  letter-spacing: 1px;
-  font-size: 23px;
-  font-weight: 100;
-  font-style: italic;
+.wrapper{
+  width: 33.33333%;
+  height: 100%;
+  padding: 10px;
 }
 
-/**describtion**/
-.col-left, .col-right {
-  float: left;
-  width: 50%;
-  padding: 0 15px;
-  height: 551px;
-  display: grid;
-  align-content: center;
+.name{
+  padding: 100px 0 0 0;
 }
 
-.des{
-  padding: 0;
-}
-
-.brief_intro h2{
-  font-size: 30px;
-  letter-spacing: 4px;
-  text-transform: capitalize;
-  font-family: 'Righteous', cursive;
-  display: block;
-  color: #202124;
-  text-shadow:
-  -0.5px -0.5px 0 white,
-  0.5px -0.5px 0 white,
-  -0.5px 0.5px 0 white,
-  0.5px 0.5px 0 white;
-}
-
-/**.brief_intro span{
-  background:linear-gradient(180deg,transparent 65%, #63a359 0);
-  opacity: 0.7;
-}**/
-
-.brief_intro h2:hover{
-  color: white;
-  text-shadow: none;
-}
-
-.col-right h3{
-  font-size: 23px;
-  font-family: 'Roboto', cursive;
-  font-weight: 100;
-  display: block;
-  color: white;}
-
-.wordes, .button_group{
-  margin: 20px;
-}
-
-.button_group a{
-  color: #aaaaaa;
-  letter-spacing: 1px;
-  font-size: 23px;
-  font-family: 'Roboto', sans-serif;
-  margin-top: 10rem;
-}
-
-.fa{
-  color: #aaaaaa;
-  margin-right: 10px;
-}
-
-.block{
-  border-bottom: 2px solid #63a359;
-  padding: 4px;
-}
-
-.block:hover{
-  border: 5px solid #63a359;
-  border-radius: 5px;
-  background-color: #63a359;
-  color: #202124;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  opacity: 0.7;}
-
-
-/**goal**/
-.goal{
+.name p{
   font-family: 'Righteous', cursive;
   color: #f4f0e8;
   letter-spacing: 2.5px;
   font-size: 50px;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 20px;
 }
 
-.goal-item{
-  float: left;
-  width: 33.333%;
-  padding: 0 0 0 15px;
+.box{
+  position: relative;
+  max-height: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 1.4px 1.7px rgba(0, 0, 0, 0.017),
+              0 3.3px 4px rgba(0, 0, 0, 0.024),
+              0 6.3px 7.5px rgba(0, 0, 0, 0.03),
+              0 11.2px 13.4px rgba(0, 0, 0, 0.036),
+              0 20.9px 25.1px rgba(0, 0, 0, 0.043),
+              0 50px 60px rgba(0, 0, 0, 0.06);
+    }
+
+.box:hover {
+   transition: all 0.3s ease-in-out;
 }
 
-.goal-it h3{
-  font-size: 17px;
-  letter-spacing: 1px;
-  text-transform: none;
-  padding: 0 15px;
-  text-align: left;
-  font-family: 'Roboto', cursive;
-  font-weight: 100;
-  display: block;
-  color: white;
-  margin-top: 10px;
+.box:hover:before {
+   transition: all 0.3s ease-in-out;}
+
+.box h2, h3 {
+   position: absolute;
+   color: #fff;
+   z-index: 2;
+   width: 100%;
+   transition: opacity 0.2s, transform 0.3s;
 }
 
-
-/**process**/
-.text h3{
-  font-family: 'Roboto', cursive;
-  font-weight: 700;
-  letter-spacing: 2px;
-  font-style: italic;
-  text-transform: capitalize;
-  font-size: 23px;
-  color: white;
+.box img {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+   transition: all 0.3s ease-in-out;
 }
 
-.text h4{
-  font-family: 'Roboto', cursive;
-  font-weight: 700;
-  letter-spacing: 2px;
-  font-style: italic;
-  text-transform: capitalize;
-  font-size: 20px;
-  color: #aaaaaa;
-  margin-top: 15px;
+.box img:hover {
+   transition: all 0.3s ease-in-out;
 }
 
-.text p{
-  color: white;
-  font-weight: 100;
-  font-size: 17px;
-  letter-spacing: 1px;
+.box img:after {
+   content: "";
+   position: absolute;
+   background-color: rgba(0, 0, 0, 0.6);
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   opacity: 0;
 }
 
-.plain{
-  padding: 0 15px;
+.box img:hover {
+   transition: all 0.3s ease-in-out;
+}
+ 
+
+.blury-card .frame {
+   width: calc(100% - 40px);
+   height: calc(100% - 40px);
+   opacity: 0;
+   transition: all 0.3s ease-in-out;}
+
+.blury-card h2, h3 {
+   text-align: center;
+   top: 50%;
+   transform: translatey(-50%);
+   margin: 0;
+   z-index: 3;}
+
+.blury-card h3 {
+   transform: translatey(30px);
+   letter-spacing: 3px;}
+
+.blury-card span {
+   font-size: 24px;
+}
+ .blury-card img {
+   z-index: 2;
+}
+ .blury-card:hover .frame {
+   width: calc(100% - 120px);
+   height: calc(100% - 120px);
+   opacity: 1;
+}
+ .blury-card:hover img {
+   opacity: 0.7;
+}
+ .blury-card:hover:before {
+   opacity: 1;
+   transition: all 0.3s ease-in-out;
 }
 
-.pic-group{
-  float: left;
-  width: 50%;
-  padding: 15px;
-  margin-top: 50px;
-}
-
-
-
-.seo-b{
-  margin-top: 15px;
-}
-
-.seo-b span{
-  font-size: 17px;
-  color: white;
-  margin-top: 15px;
-}
 
 /**footer**/
 .wave{
@@ -391,29 +316,43 @@ section {
 }
 
 
-/**back to project**/
-.button-goback{
-  text-align: center;
-}
-
-.button-goback a{
-  border: 2px solid #63a359;
-  padding: 20px;
-  border-radius: 15px;
-  color: #63a359;
-  font-size: 30px;
-  box-shadow: -5px 5px 0 #63a359;
-}
-
-.button-goback a:hover{
-  background-color: #63a359;
-  color: #333;
-  box-shadow: 5px -5px 0 white;
-  font-weight: 700;
-}
-
 
 /***MEDIA QUERIES**/
+
+@media screen and (max-width: 880px) {
+  .wrapper {
+    width: 50%;
+  }
+
+  .header{
+    line-height: 150px;
+  }
+
+  .name{
+    margin-top: 50px;
+    padding-bottom: 0;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .wrapper {
+    width: 100%;}
+
+  .header{
+    line-height: 50px;
+    font-size: 33px;}
+
+  .name{
+    margin-top: 100px;
+    padding-bottom: 0;
+    height: 100%;}
+
+  .wave{
+  height: 67px;}
+
+}
+
 
 @media (max-width: 1023px) {
 .header p {
@@ -488,7 +427,4 @@ section{
   height: 67px;
 }
 }
-
-
-
 
