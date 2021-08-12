@@ -359,6 +359,10 @@ img {
     padding-bottom: 0;
     height: 100%;
   }
+
+  .wave{
+    height: 130px;
+  }
 }
 
 @media screen and (max-width: 520px) {
@@ -449,8 +453,7 @@ section{
   text-align: left;
 }
 
-.wave{
-  height: 130px;
+
 }
 }
 
