@@ -164,6 +164,18 @@ img {
   text-transform: uppercase;
 }
 
+.name h2{
+  font-family: 'Roboto', sans-serif;
+  color: #202124;
+  font-size: 30px;
+  text-align: center;
+  text-shadow:
+  -1px -1px 0 #f4f0e8,
+  1px -1px 0 #f4f0e8,
+  -1px 1px 0 #f4f0e8,
+  1px 1px 0 #f4f0e8;
+}
+
 .box{
   position: relative;
   max-height: 300px;
@@ -314,6 +326,9 @@ img {
   font-weight: 700;
   text-decoration: underline;
 }
+
+
+
 
 
 /**back to project**/

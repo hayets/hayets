@@ -209,13 +209,14 @@ section {
   text-shadow: none;
 }**/
 
-.col-left h3{
+.wordes h3{
   font-size: 17px;
   font-family: 'Roboto', cursive;
   font-weight: 100;
   display: block;
   color: white;
   letter-spacing: 1px;
+
 }
 
 .wordes, .button_group{
@@ -230,7 +231,7 @@ section {
   margin-top: 10rem;
 }
 
-.fa{
+.button_group i{
   color: #aaaaaa;
   margin-right: 10px;
 }
