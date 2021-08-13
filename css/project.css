@@ -65,7 +65,7 @@ img {
 }
 
 section {
-  padding: 100px 0px;
+  padding: 80px 0px;
 }
 
 .clearfix::after {
@@ -169,7 +169,6 @@ section {
   letter-spacing: 1px;
   font-size: 23px;
   font-weight: 100;
-  font-style: italic;
 }
 
 /**describtion**/
@@ -186,7 +185,7 @@ section {
   padding: 0;
 }
 
-.brief_intro h2{
+/**..brief_intro h2{
   font-size: 30px;
   letter-spacing: 4px;
   text-transform: capitalize;
@@ -203,19 +202,21 @@ section {
 /**.brief_intro span{
   background:linear-gradient(180deg,transparent 65%, #63a359 0);
   opacity: 0.7;
-}**/
+}
 
 .brief_intro h2:hover{
   color: white;
   text-shadow: none;
-}
+}**/
 
-.col-right h3{
-  font-size: 23px;
+.col-left h3{
+  font-size: 17px;
   font-family: 'Roboto', cursive;
   font-weight: 100;
   display: block;
-  color: white;}
+  color: white;
+  letter-spacing: 1px;
+}
 
 .wordes, .button_group{
   margin: 20px;
@@ -272,15 +273,19 @@ section {
   text-transform: none;
   padding: 0 15px;
   text-align: left;
-  font-family: 'Roboto', cursive;
+  font-family: 'Roboto', sans-serif;
   font-weight: 100;
   display: block;
   color: white;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 
 /**process**/
+.text{
+  margin-bottom: 30px;
+}
+
 .text h3{
   font-family: 'Roboto', cursive;
   font-weight: 700;
@@ -292,13 +297,12 @@ section {
 }
 
 .text h4{
-  font-family: 'Roboto', cursive;
-  font-weight: 700;
-  letter-spacing: 2px;
-  font-style: italic;
+  font-family: futura;
+  font-weight: 100;
+  letter-spacing: 1px;
   text-transform: capitalize;
   font-size: 20px;
-  color: #aaaaaa;
+  color: #f4f0e8;
   margin-top: 15px;
 }
 
@@ -307,6 +311,11 @@ section {
   font-weight: 100;
   font-size: 17px;
   letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.hightlight{
+  background: linear-gradient(180deg,transparent 65%, rgba(99, 163, 89, 0.5) 0);
 }
 
 .plain{
