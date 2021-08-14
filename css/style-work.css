@@ -169,24 +169,50 @@ section {
 .items h3{
   color: #aaaaaa;
   font-weight: 100;
-  font-style: italic;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 0.3rem;
 }
 
 .items a{
   color: #f4f0e8;
   font-size: 1.5rem;
-  border-bottom: 0.15rem solid #63a359;
+  border-bottom: 2px solid #63a359;
+  padding: 3px;
 }
 
 .items a:hover{
-  border: 0.15rem solid #63a359;
-  border-radius: 3px;
+  border: 2px solid #63a359;
+  border-radius: 5px;
   color: #202124;
   background-color: #63a359;
   opacity: 0.7;
-  padding: 0.15rem;
+  padding: 3px;
+}
+
+.v{
+  margin-top: 0;
+}
+
+.view a{
+  color: #f4f0e8;
+  font-size: 2rem;
+  border: 2px solid #63a359;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.view{
+  margin-top: 60px;
+}
+
+
+.view a:hover{
+  border: 2px solid #63a359;
+  border-radius: 10px;
+  color: #202124;
+  background-color: #63a359;
+  opacity: 0.7;
+  padding: 10px;
 }
 
 .fa{

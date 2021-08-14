@@ -209,6 +209,24 @@ section {
   text-shadow: none;
 }**/
 
+.experience-year {
+  background-color: white;
+  color: #202124;
+}
+
+.text .experience-year{
+  color: #202124;
+  font-weight: 600;
+  margin-top: 10px;
+  font-size: 17px;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.my{
+  height: 400px;
+}
+
 .wordes h3{
   font-size: 17px;
   font-family: 'Roboto', cursive;
@@ -221,6 +239,29 @@ section {
 
 .wordes, .button_group{
   margin: 20px;
+}
+
+.ex {
+  margin: 0px;
+}
+
+.ex a{
+  padding: 10px;
+  border-bottom: 2px solid #63a359;
+  font-size: 17px;
+}
+
+.ex a:hover{
+  padding: 10px;
+  background-color: #63a359;
+  border: 2px solid #63a359;
+  border-radius: 5px;
+  font-size: 17px;
+  color: #202124;
+}
+
+.button_group .exx{
+  font-size: 17px;
 }
 
 .button_group a{
