@@ -282,6 +282,10 @@ section {
 }
 
 
+.two-pc{
+  width: 50%;
+}
+
 /**process**/
 .text{
   margin-bottom: 30px;
@@ -479,6 +483,10 @@ header .container{
   margin-bottom: 35px;
   float: none;
   margin-left: 30px;
+}
+
+.two-pc{
+  width: 80%;
 }
 
 .pic-group{
