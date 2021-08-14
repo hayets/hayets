@@ -334,6 +334,10 @@ ol, ul {
   width: 100%;
 }
 
+.v{
+  float: right;
+}
+
 .items{
   margin-bottom: 2rem;
 }
@@ -341,6 +345,7 @@ ol, ul {
 .title{
   font-size: 2rem;
   display: inline-block;
+  font-size: 18px;
 }
 
 .items h3{
@@ -348,10 +353,15 @@ ol, ul {
 }
 
 
-
 .view{
   display: inline-block;
   float: right;
+  margin-top: 10px;
+}
+
+.view a{
+  padding: 5px;
+  font-size: 1.5rem;
 }
 
 .view i{
