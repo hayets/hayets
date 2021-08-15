@@ -300,6 +300,7 @@ section {
   flex: 1;
 }**/
 
+/**works**/
 
 
 
@@ -340,7 +341,7 @@ section {
   letter-spacing: 2px;
 }
 
-.back h2{
+/**.back h2{
   color: white;
   font-family: 'Righteous', cursive;
   letter-spacing: 2px;
@@ -370,7 +371,7 @@ section {
  border-style: solid;
  border-color: #63a359;
  opacity: 0.5;
-}
+}**/
 
 
 /**paper note**/
@@ -476,9 +477,15 @@ section {
   transform-origin: top left;
   font-size: 1.5rem;
   margin-left: 5.7rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   align-items: center;
   width: 151px;
+}
+
+.link-wrapper a{
+  color: #202124;
+  font-family: futura;
+  letter-spacing: 2px;
 }
 
 
@@ -578,6 +585,12 @@ ol, ul {
   float: none;
   height: 100%;
   width: 100%;
+}
+
+.col-work{
+  float: none;
+  width: 100%;
+  
 }
 
 section{
