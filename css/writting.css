@@ -10,26 +10,10 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-  background-color: #202124;
+  background-color: white;
   font-family: 'Montserrat', sans-serif;
 }
 
-body:after{
-  content: '';
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/756881/texture.svg);
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 999;
-  pointer-events: none;
-  opacity: 0.2;
-  filter: invert(1);
-  background-size: cover;
-}
 
 * {
   box-sizing: border-box;
@@ -79,9 +63,29 @@ img {
   float: left;
   box-sizing: border-box; }
 
-  /**header**/
-#header{
-  padding: 2% 0 2% 0;
+
+ /**header**/
+header{
+  width: 100%;
+  right: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.logo{
+  float: left;
+  font-family: 'Righteous', cursive;
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  padding-top: 30px;
+  line-height: 0;
+  color: #e06052;
+  margin-left: 30px;
+}
+
+.logo a{
+  color: #e06052;
 }
 
 .navbar-list{
@@ -90,15 +94,16 @@ img {
 }
 
 .navbar-item{
-  position: relative;
-  float: left;
+  float: right;
   margin-bottom: 5%;
   height: 40px;
+  padding-top: 30px;
+
 }
 
 .navbar-link{
   font-family: 'Roboto', sans-serif;
-  color: white;
+  color: #9c9c9c;
   margin-right: 35px;
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -118,8 +123,8 @@ img {
 }
 
 .navbar-link:hover {
-  color: #202124;
-  background-color: #63a359;
+  color: white;
+  background-color: #e06052;
 }
 
 #menu{
@@ -127,9 +132,11 @@ img {
 }
 
 #work{
-  color: #202124;
-  background-color: #63a359;
+  color: white;
+  background-color: #e06052;
 }
+
+
 
 
 /**fashion**/
@@ -157,7 +164,7 @@ img {
 
 .name p{
   font-family: 'Righteous', cursive;
-  color: #f4f0e8;
+  color: #e06052;
   letter-spacing: 2.5px;
   font-size: 50px;
   text-align: center;
@@ -166,14 +173,15 @@ img {
 
 .name h2{
   font-family: 'Roboto', sans-serif;
-  color: #202124;
+  color: white;
+  letter-spacing: 2px;
   font-size: 30px;
   text-align: center;
   text-shadow:
-  -1px -1px 0 #f4f0e8,
-  1px -1px 0 #f4f0e8,
-  -1px 1px 0 #f4f0e8,
-  1px 1px 0 #f4f0e8;
+  -1px -1px 0 #9c9c9c,
+  1px -1px 0 #9c9c9c,
+  -1px 1px 0 #9c9c9c,
+  1px 1px 0 #9c9c9c;
 }
 
 .box{
@@ -219,7 +227,7 @@ img {
 .box img:after {
    content: "";
    position: absolute;
-   background-color: rgba(0, 0, 0, 0.6);
+   background-color: rgba(204,204,204, 0.6);
    width: 100%;
    height: 100%;
    top: 0;
@@ -241,6 +249,7 @@ img {
 .blury-card h2, h3 {
    text-align: center;
    top: 50%;
+   color: #e06052;
    transform: translatey(-50%);
    margin: 0;
    z-index: 3;}
@@ -284,7 +293,7 @@ img {
 }
 
 .foo{
-  background-color: white;
+  background-color: #f5f5f5;
   width: 100%;
   height: 200px;
   max-width: 1980px;

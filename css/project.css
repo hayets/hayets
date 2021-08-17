@@ -215,14 +215,14 @@ header{
 }**/
 
 .experience-year {
-  background-color: #9c9c9c;
+  background-color: #e06052;
   color: #202124;
 }
 
 .text .experience-year{
-  color: #202124;
+  color: white;
   font-weight: 600;
-  margin-top: 10px;
+  margin-top: 20px;
   font-size: 17px;
   display: inline-block;
   padding: 0 10px;
@@ -249,18 +249,18 @@ header{
 }
 
 .ex a{
-  padding: 10px;
-  border-bottom: 2px solid #63a359;
+  padding: 5px;
+  border-bottom: 2px solid #e06052;
   font-size: 17px;
 }
 
 .ex a:hover{
-  padding: 10px;
-  background-color: #63a359;
-  border: 2px solid #63a359;
+  padding: 5px;
+  background-color: #e06052;
+  border: 2px solid #e06052;
   border-radius: 5px;
   font-size: 17px;
-  color: #202124;
+  color: white;
 }
 
 .button_group .exx{
@@ -360,7 +360,7 @@ header{
   letter-spacing: 1px;
   text-transform: capitalize;
   font-size: 20px;
-  color: #9c9c9c;
+  color: #e06052;
   margin-top: 15px;
 }
 
