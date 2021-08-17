@@ -363,6 +363,15 @@ ol, ul {
   display: none;
 }
 
+.logo{
+  float: none;
+}
+
+.navbar-link{
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
 
 .view{
   display: inline-block;

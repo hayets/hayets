@@ -318,7 +318,7 @@ header{
   font-family: 'Righteous', cursive;
   color: #9c9c9c;
   letter-spacing: 2.5px;
-  font-size: 50px;
+  font-size: 25px;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -555,6 +555,15 @@ ol, ul {
   width: 100%;
 }
 
+.logo{
+  float: none;
+}
+
+.navbar-link{
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
 
 .container{
   padding: 0;
@@ -582,6 +591,10 @@ header .container{
 .pic-group{
   width: 100%;
   margin-top: 35px;
+}
+
+.logo{
+  float: none;
 }
 
 section{
