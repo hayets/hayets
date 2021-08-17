@@ -346,24 +346,28 @@ header{
 }
 
 .button-goback a{
-  border: 2px solid #63a359;
+  border: 2px solid #e06052;
   padding: 20px;
   border-radius: 15px;
-  color: #63a359;
+  color: #e06052;
   font-size: 30px;
-  box-shadow: -5px 5px 0 #63a359;
+  box-shadow: 5px 5px 0 #e06052;
 }
 
 .button-goback a:hover{
-  background-color: #63a359;
-  color: #333;
-  box-shadow: 5px -5px 0 white;
+  background-color:  #e06052;
+  color: white;
+  box-shadow: 5px 5px 0 #9c9c9c;
   font-weight: 700;
 }
 
 .goback{
   margin-top: 200px;
 }
+
+
+
+
 
 
 
