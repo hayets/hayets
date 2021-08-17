@@ -10,26 +10,10 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-  background-color: #202124;
+  background-color: white;
   font-family: 'Montserrat', sans-serif;
 }
 
-body:after{
-  content: '';
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/756881/texture.svg);
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 999;
-  pointer-events: none;
-  opacity: 0.2;
-  filter: invert(1);
-  background-size: cover;
-}
 
 * {
   box-sizing: border-box;
@@ -92,8 +76,27 @@ section {
   box-sizing: border-box; }
 
   /**header**/
-#header{
-  padding: 2% 0 2% 0;
+header{
+  width: 100%;
+  right: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.logo{
+  float: left;
+  font-family: 'Righteous', cursive;
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  padding-top: 30px;
+  line-height: 0;
+  color: #e06052;
+  margin-left: 30px;
+}
+
+.logo a{
+  color: #e06052;
 }
 
 .navbar-list{
@@ -102,15 +105,16 @@ section {
 }
 
 .navbar-item{
-  position: relative;
-  float: left;
+  float: right;
   margin-bottom: 5%;
   height: 40px;
+  padding-top: 30px;
+
 }
 
 .navbar-link{
   font-family: 'Roboto', sans-serif;
-  color: white;
+  color: #9c9c9c;
   margin-right: 35px;
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -130,8 +134,8 @@ section {
 }
 
 .navbar-link:hover {
-  color: #202124;
-  background-color: #63a359;
+  color: white;
+  background-color: #e06052;
 }
 
 #menu{
@@ -139,9 +143,10 @@ section {
 }
 
 #work{
-  color: #202124;
-  background-color: #63a359;
+  color: white;
+  background-color: #e06052;
 }
+
 
 
 /**intro**/
@@ -157,7 +162,7 @@ section {
 
 .intro-words h2{
   font-family: 'Righteous', cursive;
-  color: #f4f0e8;
+  color:  #e06052;
   letter-spacing: 2.5px;
   font-size: 50px;
 }
@@ -165,7 +170,7 @@ section {
 
 .intro-words p{
   font-family: 'Roboto', sans-serif;
-  color: #f4f0e8;
+  color: #9c9c9c;
   letter-spacing: 1px;
   font-size: 23px;
   font-weight: 100;
@@ -210,7 +215,7 @@ section {
 }**/
 
 .experience-year {
-  background-color: white;
+  background-color: #9c9c9c;
   color: #202124;
 }
 
@@ -230,11 +235,9 @@ section {
 .wordes h3{
   font-size: 17px;
   font-family: 'Roboto', cursive;
-  font-weight: 100;
+  font-weight: 300;
   display: block;
-  color: white;
-  letter-spacing: 1px;
-
+  color: #9c9c9c;
 }
 
 .wordes, .button_group{
@@ -277,25 +280,30 @@ section {
   margin-right: 10px;
 }
 
-.block{
-  border-bottom: 2px solid #63a359;
+.block a{
+  color: #9c9c9c;
+  border-bottom: 2px solid #e06052;
   padding: 4px;
 }
 
-.block:hover{
-  border: 5px solid #63a359;
+.block a:hover{
+  border: 5px solid #e06052;
   border-radius: 5px;
-  background-color: #63a359;
-  color: #202124;
+  background-color: #e06052;
+  color: white;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   opacity: 0.7;}
 
 
+.process{
+  background-color: #f5f5f5;
+}
+
 /**goal**/
 .goal{
   font-family: 'Righteous', cursive;
-  color: #f4f0e8;
+  color: #9c9c9c;
   letter-spacing: 2.5px;
   font-size: 50px;
   text-align: center;
@@ -316,15 +324,19 @@ section {
   padding: 0 15px;
   text-align: left;
   font-family: 'Roboto', sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   display: block;
-  color: white;
+  color: #9c9c9c;
   margin-top: 20px;
 }
 
 
 .two-pc{
   width: 50%;
+}
+
+.problem{
+  background-color: #f5f5f5;
 }
 
 /**process**/
@@ -339,7 +351,7 @@ section {
   font-style: italic;
   text-transform: capitalize;
   font-size: 23px;
-  color: white;
+  color: #9c9c9c;
 }
 
 .text h4{
@@ -348,15 +360,14 @@ section {
   letter-spacing: 1px;
   text-transform: capitalize;
   font-size: 20px;
-  color: #f4f0e8;
+  color: #9c9c9c;
   margin-top: 15px;
 }
 
 .text p{
-  color: white;
-  font-weight: 100;
+  color: #9c9c9c;
+  font-weight: 300;
   font-size: 17px;
-  letter-spacing: 1px;
   margin-bottom: 20px;
 }
 
@@ -380,9 +391,10 @@ section {
   color: #aaaaaa;
 }
 
-.seo-a span{
+.seo-a a{
   font-size: 20px;
   color: #aaaaaa;
+  border-bottom: 2px solid #e06052;
   font-family: futura;
   font-weight: 100;
   letter-spacing: 1px;
@@ -396,7 +408,7 @@ section {
 
 .seo-b span{
   font-size: 17px;
-  color: white;
+  color: #9c9c9c;
   margin-top: 15px;
 }
 
@@ -415,7 +427,7 @@ section {
 }
 
 .foo{
-  background-color: white;
+  background-color: #f5f5f5;
   width: 100%;
   height: 200px;
   max-width: 1980px;
@@ -465,18 +477,18 @@ section {
 }
 
 .button-goback a{
-  border: 2px solid #63a359;
+  border: 2px solid #e06052;
   padding: 20px;
   border-radius: 15px;
-  color: #63a359;
+  color: #e06052;
   font-size: 30px;
-  box-shadow: -5px 5px 0 #63a359;
+  box-shadow: 5px 5px 0 #e06052;
 }
 
 .button-goback a:hover{
-  background-color: #63a359;
-  color: #333;
-  box-shadow: 5px -5px 0 white;
+  background-color: #e06052;
+  color: white;
+  box-shadow: 5px 5px 0 #9c9c9c;
   font-weight: 700;
 }
 
