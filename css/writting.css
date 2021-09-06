@@ -270,7 +270,7 @@ header{
    opacity: 1;
 }
  .blury-card:hover img {
-   opacity: 0.7;
+   opacity: 0.2;
 }
  .blury-card:hover:before {
    opacity: 1;
